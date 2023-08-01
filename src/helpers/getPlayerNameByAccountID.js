@@ -4,7 +4,7 @@ const API_KEY = "BB630920AA0332B344251E1A3C1EB035";
 async function getPlayerNameByAccountID(accountID) {
   try {
     const response = await axios.get(
-      `/ISteamUser/GetPlayerSummaries/v0002/?key=${API_KEY}&steamids=${accountID}`
+      `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${API_KEY}&steamids=${accountID}`
     );
     const data = response.data.response.players;
 
