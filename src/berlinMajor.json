@@ -1,0 +1,555 @@
+{
+    "upper": [
+        {
+            "title": "upper__quarterfinal",
+            "matches": [
+                {
+                    "id": 47782,
+                    "id_series": "a051a21px6gd4b",
+                    "status": "ended_series",
+                    "team_radiant_id": 10565,
+                    "team_dire_id": 646,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-05-01T09:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Gaimin Gladiators",
+                            "tag": "G. Gladiators",
+                            "id": 10565,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/892d6368-207a-4d53-8d34-bbc1aaacf93b.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Team Spirit",
+                            "tag": "TSpirit",
+                            "id": 646,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/d5c68b5d-02cf-413f-86cd-f5adddc533b2.png",
+                            "score": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 47783,
+                    "id_series": "r9tnbb4e4lrsxx",
+                    "status": "ended_series",
+                    "team_radiant_id": 3740,
+                    "team_dire_id": 674,
+                    "best_of_score": [
+                        2,
+                        1
+                    ],
+                    "date_start": "2023-05-01T11:20:00.000Z",
+                    "teams": [
+                        {
+                            "name": "OG",
+                            "tag": "OG",
+                            "id": 3740,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/cd63e843-ee50-4994-b9f9-cae48d01e40d.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Team Liquid",
+                            "tag": "Team Liquid",
+                            "id": 674,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/50478ba5-5ec5-4038-99d0-4300ac475a50.png",
+                            "score": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 47784,
+                    "id_series": "sr6twiqyglcowa",
+                    "status": "ended_series",
+                    "team_radiant_id": 43132,
+                    "team_dire_id": 37066,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-05-01T15:15:00.000Z",
+                    "teams": [
+                        {
+                            "name": "9 Pandas",
+                            "tag": "9 Pandas",
+                            "id": 43132,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/cce2cde5-a58b-4448-bdd1-8d333f6d4b80.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Shopify Rebellion",
+                            "tag": "Shopify Rebellion",
+                            "id": 37066,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/bc2b6fbc-5f46-4402-a1e0-b1945a8648c0.png",
+                            "score": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 47785,
+                    "id_series": "fs6u9s6c0vbglt",
+                    "status": "ended_series",
+                    "team_radiant_id": 285,
+                    "team_dire_id": 672,
+                    "best_of_score": [
+                        1,
+                        2
+                    ],
+                    "date_start": "2023-05-01T18:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Tundra Esports",
+                            "tag": "Tundra",
+                            "id": 672,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/26656f87-1679-4fd2-9588-9a79ba96c731.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "PSG.LGD",
+                            "tag": "PSG.LGD",
+                            "id": 285,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/2b7e3fdf-ee06-4373-8846-5fe74d8ba2f5.png",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "upper__semifinal",
+            "matches": [
+                {
+                    "id": 47790,
+                    "id_series": "zfojpuwi2f3fwn",
+                    "status": "ended_series",
+                    "team_radiant_id": 3740,
+                    "team_dire_id": 10565,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-05-03T13:35:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Gaimin Gladiators",
+                            "tag": "G. Gladiators",
+                            "id": 10565,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/892d6368-207a-4d53-8d34-bbc1aaacf93b.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "OG",
+                            "tag": "OG",
+                            "id": 3740,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/cd63e843-ee50-4994-b9f9-cae48d01e40d.png",
+                            "score": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 47791,
+                    "id_series": "mtlgwfl0ub7evt",
+                    "status": "ended_series",
+                    "team_radiant_id": 672,
+                    "team_dire_id": 43132,
+                    "best_of_score": [
+                        1,
+                        2
+                    ],
+                    "date_start": "2023-05-03T17:05:00.000Z",
+                    "teams": [
+                        {
+                            "name": "9 Pandas",
+                            "tag": "9 Pandas",
+                            "id": 43132,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/cce2cde5-a58b-4448-bdd1-8d333f6d4b80.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Tundra Esports",
+                            "tag": "Tundra",
+                            "id": 672,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/26656f87-1679-4fd2-9588-9a79ba96c731.png",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "upper__final",
+            "matches": [
+                {
+                    "id": 47796,
+                    "id_series": "0kdbffdi0nfzrs",
+                    "status": "ended_series",
+                    "team_radiant_id": 10565,
+                    "team_dire_id": 43132,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-05-06T14:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Gaimin Gladiators",
+                            "tag": "G. Gladiators",
+                            "id": 10565,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/892d6368-207a-4d53-8d34-bbc1aaacf93b.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "9 Pandas",
+                            "tag": "9 Pandas",
+                            "id": 43132,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/cce2cde5-a58b-4448-bdd1-8d333f6d4b80.png",
+                            "score": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "upper__grand_final",
+            "matches": [
+                {
+                    "id": 47799,
+                    "id_series": "7r79ul9uv8u5zz",
+                    "status": "ended_series",
+                    "team_radiant_id": 10565,
+                    "team_dire_id": 674,
+                    "best_of_score": [
+                        3,
+                        1
+                    ],
+                    "date_start": "2023-05-07T14:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Gaimin Gladiators",
+                            "tag": "G. Gladiators",
+                            "id": 10565,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/892d6368-207a-4d53-8d34-bbc1aaacf93b.png",
+                            "score": 3
+                        },
+                        {
+                            "name": "Team Liquid",
+                            "tag": "Team Liquid",
+                            "id": 674,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/50478ba5-5ec5-4038-99d0-4300ac475a50.png",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "lower": [
+        {
+            "title": "lower__r1",
+            "matches": [
+                {
+                    "id": 47786,
+                    "id_series": "9q5836ancnm2go",
+                    "status": "ended_series",
+                    "team_radiant_id": 275,
+                    "team_dire_id": 646,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-05-02T10:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Spirit",
+                            "tag": "TSpirit",
+                            "id": 646,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/d5c68b5d-02cf-413f-86cd-f5adddc533b2.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Team Aster",
+                            "tag": "Aster",
+                            "id": 275,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/cbfc657c-9856-4c5b-996b-62b0cb1c4870.png",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 47787,
+                    "id_series": "5y0csfzzv5bs4t",
+                    "status": "ended_series",
+                    "team_radiant_id": 7029,
+                    "team_dire_id": 674,
+                    "best_of_score": [
+                        1,
+                        2
+                    ],
+                    "date_start": "2023-05-02T13:35:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Xtreme Gaming",
+                            "tag": "Xtreme",
+                            "id": 7029,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/35d0ddf2-7aae-41cc-bf16-314dd6bf432f.png",
+                            "score": 1
+                        },
+                        {
+                            "name": "Team Liquid",
+                            "tag": "Team Liquid",
+                            "id": 674,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/50478ba5-5ec5-4038-99d0-4300ac475a50.png",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 47788,
+                    "id_series": "4cbj7i5x85eg4b",
+                    "status": "ended_series",
+                    "team_radiant_id": 37066,
+                    "team_dire_id": 3717,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-05-02T17:15:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Shopify Rebellion",
+                            "tag": "Shopify Rebellion",
+                            "id": 37066,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/bc2b6fbc-5f46-4402-a1e0-b1945a8648c0.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Evil Geniuses",
+                            "tag": "EG",
+                            "id": 3717,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/29cb5b0b-6330-49af-88b3-0b03ca2dda4e.png",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 47789,
+                    "id_series": "jbwwaj3ihnnui8",
+                    "status": "ended_series",
+                    "team_radiant_id": 285,
+                    "team_dire_id": 7177,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-05-03T10:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "PSG.LGD",
+                            "tag": "PSG.LGD",
+                            "id": 285,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/2b7e3fdf-ee06-4373-8846-5fe74d8ba2f5.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Talon Esports",
+                            "tag": "Talon",
+                            "id": 7177,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/b6de9333-1ad4-4c37-aff9-f8a608faf987.png",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "lower__r2",
+            "matches": [
+                {
+                    "id": 47792,
+                    "id_series": "fwq3pgr3es9voz",
+                    "status": "ended_series",
+                    "team_radiant_id": 275,
+                    "team_dire_id": 674,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-05-05T10:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Aster",
+                            "tag": "Aster",
+                            "id": 275,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/cbfc657c-9856-4c5b-996b-62b0cb1c4870.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Team Liquid",
+                            "tag": "Team Liquid",
+                            "id": 674,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/50478ba5-5ec5-4038-99d0-4300ac475a50.png",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 47793,
+                    "id_series": "lbuhoetdbzt86q",
+                    "status": "ended_series",
+                    "team_radiant_id": 7177,
+                    "team_dire_id": 3717,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-05-05T13:35:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Talon Esports",
+                            "tag": "Talon",
+                            "id": 7177,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/b6de9333-1ad4-4c37-aff9-f8a608faf987.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Evil Geniuses",
+                            "tag": "EG",
+                            "id": 3717,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/29cb5b0b-6330-49af-88b3-0b03ca2dda4e.png",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "lower__quarterfinal",
+            "matches": [
+                {
+                    "id": 47795,
+                    "id_series": "mas80dbvuapiyk",
+                    "status": "ended_series",
+                    "team_radiant_id": 674,
+                    "team_dire_id": 672,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-05-05T17:05:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Tundra Esports",
+                            "tag": "Tundra",
+                            "id": 672,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/26656f87-1679-4fd2-9588-9a79ba96c731.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Team Liquid",
+                            "tag": "Team Liquid",
+                            "id": 674,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/50478ba5-5ec5-4038-99d0-4300ac475a50.png",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 47794,
+                    "id_series": "vqfpedosjok8w7",
+                    "status": "ended_series",
+                    "team_radiant_id": 3717,
+                    "team_dire_id": 3740,
+                    "best_of_score": [
+                        2,
+                        1
+                    ],
+                    "date_start": "2023-05-06T10:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "OG",
+                            "tag": "OG",
+                            "id": 3740,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/cd63e843-ee50-4994-b9f9-cae48d01e40d.png",
+                            "score": 1
+                        },
+                        {
+                            "name": "Evil Geniuses",
+                            "tag": "EG",
+                            "id": 3717,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/29cb5b0b-6330-49af-88b3-0b03ca2dda4e.png",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "lower__semifinal",
+            "matches": [
+                {
+                    "id": 47797,
+                    "id_series": "b6mjk6qu9g28uj",
+                    "status": "ended_series",
+                    "team_radiant_id": 674,
+                    "team_dire_id": 3717,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-05-06T17:20:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Liquid",
+                            "tag": "Team Liquid",
+                            "id": 674,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/50478ba5-5ec5-4038-99d0-4300ac475a50.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Evil Geniuses",
+                            "tag": "EG",
+                            "id": 3717,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/29cb5b0b-6330-49af-88b3-0b03ca2dda4e.png",
+                            "score": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "lower__final",
+            "matches": [
+                {
+                    "id": 47798,
+                    "id_series": "mvhpwb5pb4fjre",
+                    "status": "ended_series",
+                    "team_radiant_id": 674,
+                    "team_dire_id": 43132,
+                    "best_of_score": [
+                        2,
+                        1
+                    ],
+                    "date_start": "2023-05-07T10:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Liquid",
+                            "tag": "Team Liquid",
+                            "id": 674,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/50478ba5-5ec5-4038-99d0-4300ac475a50.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "9 Pandas",
+                            "tag": "9 Pandas",
+                            "id": 43132,
+                            "image": "https://media.cyberscore.live/static/teams/2023/4/cce2cde5-a58b-4448-bdd1-8d333f6d4b80.png",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

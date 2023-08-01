@@ -1,0 +1,382 @@
+{
+    "upper": [
+        {
+            "title": "upper__quarterfinal",
+            "matches": [
+                {
+                    "id": 54965,
+                    "id_series": "xwm6bzjxes0ge2",
+                    "status": "ended_series",
+                    "team_radiant_id": 30705,
+                    "team_dire_id": 43272,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-07-01T12:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Ancient Tribe",
+                            "tag": "Ancient Tribe",
+                            "id": 30705,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/3327dd3c-390b-43c9-b3b2-6e61492d93a3.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Ram Squad",
+                            "tag": "Ram Squad",
+                            "id": 43272,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/6037b735-3ef1-481c-af50-a6733934f907.png",
+                            "score": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 54964,
+                    "id_series": "5c7w49tll309nj",
+                    "status": "ended_series",
+                    "team_radiant_id": 38481,
+                    "team_dire_id": 34663,
+                    "best_of_score": [
+                        2,
+                        1
+                    ],
+                    "date_start": "2023-07-01T15:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Sexy",
+                            "tag": "Team Sexy",
+                            "id": 38481,
+                            "image": "https://media.cyberscore.live/static/teams/2023/7/40596533-da8c-4fa5-b562-bc2973b0358b.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "KZ TEAM",
+                            "tag": "KZ",
+                            "id": 34663,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/3e16b25c-b98e-4e29-a5d1-778ad0b7109f.png",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "upper__semifinal",
+            "matches": [
+                {
+                    "id": 54968,
+                    "id_series": "zkr3n0721phzvm",
+                    "status": "ended_series",
+                    "team_radiant_id": 38481,
+                    "team_dire_id": 43271,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-07-02T12:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Sexy",
+                            "tag": "Team Sexy",
+                            "id": 38481,
+                            "image": "https://media.cyberscore.live/static/teams/2023/7/40596533-da8c-4fa5-b562-bc2973b0358b.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "ex-Monaspa",
+                            "tag": "ex-Monaspa",
+                            "id": 43271,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/f6a63b13-9f9a-4f1a-bd8f-d9983af85c26.png",
+                            "score": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 54969,
+                    "id_series": "qfmsaqw9s8zhjn",
+                    "status": "ended_series",
+                    "team_radiant_id": 43311,
+                    "team_dire_id": 30705,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-07-02T15:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Ancient Tribe",
+                            "tag": "Ancient Tribe",
+                            "id": 30705,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/3327dd3c-390b-43c9-b3b2-6e61492d93a3.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Luna Galaxy",
+                            "tag": "Luna Galaxy",
+                            "id": 43311,
+                            "image": "https://media.cyberscore.live/static/teams/2023/6/1381bdec-b42e-466b-938c-ff91b89a85c3.png",
+                            "score": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "upper__final",
+            "matches": [
+                {
+                    "id": 54973,
+                    "id_series": "lslqovswk6avrd",
+                    "status": "ended_series",
+                    "team_radiant_id": 38481,
+                    "team_dire_id": 30705,
+                    "best_of_score": [
+                        2,
+                        1
+                    ],
+                    "date_start": "2023-07-03T15:10:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Sexy",
+                            "tag": "Team Sexy",
+                            "id": 38481,
+                            "image": "https://media.cyberscore.live/static/teams/2023/7/40596533-da8c-4fa5-b562-bc2973b0358b.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Ancient Tribe",
+                            "tag": "Ancient Tribe",
+                            "id": 30705,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/3327dd3c-390b-43c9-b3b2-6e61492d93a3.png",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "upper__grand_final",
+            "matches": [
+                {
+                    "id": 54975,
+                    "id_series": "zdr7br8mbyw1ba",
+                    "status": "ended_series",
+                    "team_radiant_id": 43271,
+                    "team_dire_id": 38481,
+                    "best_of_score": [
+                        2,
+                        3
+                    ],
+                    "date_start": "2023-07-05T15:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Team Sexy",
+                            "tag": "Team Sexy",
+                            "id": 38481,
+                            "image": "https://media.cyberscore.live/static/teams/2023/7/40596533-da8c-4fa5-b562-bc2973b0358b.png",
+                            "score": 3
+                        },
+                        {
+                            "name": "ex-Monaspa",
+                            "tag": "ex-Monaspa",
+                            "id": 43271,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/f6a63b13-9f9a-4f1a-bd8f-d9983af85c26.png",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "lower": [
+        {
+            "title": "lower__r1",
+            "matches": [
+                {
+                    "id": 54966,
+                    "id_series": "rbd5mbv3d2zlp5",
+                    "status": "ended_series",
+                    "team_radiant_id": 18031,
+                    "team_dire_id": 34663,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-07-01T18:45:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Hot Headed Gaming",
+                            "tag": "HHG",
+                            "id": 18031,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/cbd4c172-28ee-41ae-b7a0-9a09b64a28cc.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "KZ TEAM",
+                            "tag": "KZ",
+                            "id": 34663,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/3e16b25c-b98e-4e29-a5d1-778ad0b7109f.png",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 54967,
+                    "id_series": "b6bfuhgugf65yw",
+                    "status": "ended_series",
+                    "team_radiant_id": 43272,
+                    "team_dire_id": 43232,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-07-02T18:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "Gen of Miracles",
+                            "tag": "Gen of Miracles",
+                            "id": 43232,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/9ff4925f-b6c3-4bf1-9617-f97a5c8bbe49.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Ram Squad",
+                            "tag": "Ram Squad",
+                            "id": 43272,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/6037b735-3ef1-481c-af50-a6733934f907.png",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "lower__quarterfinal",
+            "matches": [
+                {
+                    "id": 58635,
+                    "id_series": "raposusqibq7dl",
+                    "status": "ended_series",
+                    "team_radiant_id": 43271,
+                    "team_dire_id": 43272,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-07-03T13:38:35.000Z",
+                    "teams": [
+                        {
+                            "name": "Ram Squad",
+                            "tag": "Ram Squad",
+                            "id": 43272,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/6037b735-3ef1-481c-af50-a6733934f907.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "ex-Monaspa",
+                            "tag": "ex-Monaspa",
+                            "id": 43271,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/f6a63b13-9f9a-4f1a-bd8f-d9983af85c26.png",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 54970,
+                    "id_series": "q4o0dz0rxrt38b",
+                    "status": "ended_series",
+                    "team_radiant_id": 34663,
+                    "team_dire_id": 43311,
+                    "best_of_score": [
+                        0,
+                        2
+                    ],
+                    "date_start": "2023-07-03T19:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "KZ TEAM",
+                            "tag": "KZ",
+                            "id": 34663,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/3e16b25c-b98e-4e29-a5d1-778ad0b7109f.png",
+                            "score": 0
+                        },
+                        {
+                            "name": "Luna Galaxy",
+                            "tag": "Luna Galaxy",
+                            "id": 43311,
+                            "image": "https://media.cyberscore.live/static/teams/2023/6/1381bdec-b42e-466b-938c-ff91b89a85c3.png",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "lower__semifinal",
+            "matches": [
+                {
+                    "id": 54972,
+                    "id_series": "rqcql2ar76ux79",
+                    "status": "ended_series",
+                    "team_radiant_id": 43271,
+                    "team_dire_id": 43311,
+                    "best_of_score": [
+                        2,
+                        1
+                    ],
+                    "date_start": "2023-07-04T12:00:00.000Z",
+                    "teams": [
+                        {
+                            "name": "ex-Monaspa",
+                            "tag": "ex-Monaspa",
+                            "id": 43271,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/f6a63b13-9f9a-4f1a-bd8f-d9983af85c26.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Luna Galaxy",
+                            "tag": "Luna Galaxy",
+                            "id": 43311,
+                            "image": "https://media.cyberscore.live/static/teams/2023/6/1381bdec-b42e-466b-938c-ff91b89a85c3.png",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "lower__final",
+            "matches": [
+                {
+                    "id": 54974,
+                    "id_series": "s0zy4vuayc214j",
+                    "status": "ended_series",
+                    "team_radiant_id": 43271,
+                    "team_dire_id": 30705,
+                    "best_of_score": [
+                        2,
+                        0
+                    ],
+                    "date_start": "2023-07-04T15:55:00.000Z",
+                    "teams": [
+                        {
+                            "name": "ex-Monaspa",
+                            "tag": "ex-Monaspa",
+                            "id": 43271,
+                            "image": "https://media.cyberscore.live/static/teams/2023/5/f6a63b13-9f9a-4f1a-bd8f-d9983af85c26.png",
+                            "score": 2
+                        },
+                        {
+                            "name": "Ancient Tribe",
+                            "tag": "Ancient Tribe",
+                            "id": 30705,
+                            "image": "https://media.cyberscore.live/static/teams/2023/3/3327dd3c-390b-43c9-b3b2-6e61492d93a3.png",
+                            "score": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

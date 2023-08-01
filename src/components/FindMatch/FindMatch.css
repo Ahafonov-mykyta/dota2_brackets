@@ -1,0 +1,89 @@
+.findmatch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+}
+
+.findmatch_form {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.findmatch__input {
+  font-size: 16px;
+  height: 35px;
+  border-radius: 10px;
+  width: 80%;
+  padding: 5px 25px;
+  border: 2px solid rgb(183, 182, 182);
+}
+
+.findmatch__button {
+  cursor: pointer;
+  height: 35px;
+  border-radius: 10px;
+  background: rgb(174, 3, 3);
+  color: white;
+  padding: 0 10px;
+  border: 0;
+  transition: 150ms linear;
+  border: 2px solid rgb(255, 255, 255);
+}
+.findmatch__button:hover {
+  background: white;
+  color: rgb(174, 3, 3);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.matchinfo_title {
+  margin: 0;
+  font-size: 25px;
+}
+
+.matchinfo {
+  padding: 15px;
+}
+
+.matchinfo_nicknames {
+  margin-left: 5px;
+}
+
+.matchinfo_nicknames::after {
+  content: ",";
+}
+
+.matchinfo_nicknames:last-child::after {
+  content: ".";
+}
+
+.findmatch__loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error_nodata {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error_nodata_image {
+  width: 150px;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

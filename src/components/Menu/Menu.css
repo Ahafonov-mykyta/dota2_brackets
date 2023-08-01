@@ -1,0 +1,41 @@
+.menu {
+  position: relative;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  background: rgb(62, 62, 62);
+  gap: 5px;
+}
+
+.navlink {
+  background: rgb(174, 3, 3);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: solid black 1px;
+  color: rgb(255, 255, 255);
+  transition: 250ms linear;
+}
+
+.navlink:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(174, 3, 3);
+}
+
+.navlink.active {
+  background: rgb(255, 255, 255);
+
+  color: rgb(174, 3, 3);
+}
+
+.menu_logo {
+  width: 35px;
+}
+
+.logo_link {
+  position: absolute;
+  left: 50px;
+  top: 8px;
+}

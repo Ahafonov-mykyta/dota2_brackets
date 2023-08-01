@@ -1,0 +1,35 @@
+.tournament_bracket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.tournament_bracket.upper {
+  gap: 300px;
+}
+
+.tournament_bracket.upper.small {
+  gap: 135px;
+}
+
+.tournament_bracket.upper.big .stage:last-child {
+  margin-left: -150px;
+  margin-bottom: -380px;
+}
+
+.tournament_bracket.upper.small .stage:last-child {
+  margin-bottom: -230px;
+}
+
+.tournament_bracket.upper.small .stage:nth-last-child(2) {
+  margin-left: 335px;
+}
+
+.tournament_bracket.lower.short {
+  gap: 135px;
+}
+.tournament_bracket.lower.long {
+  gap: 50px;
+}

@@ -1,0 +1,244 @@
+.minimap_img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.minimap {
+  position: relative;
+  width: 35%;
+}
+
+.tower.radiant {
+  position: absolute;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  background: rgb(16, 213, 16);
+}
+
+.tower.radiant.t1 {
+  top: 92px;
+  left: 24px;
+}
+
+.tower.radiant.t2 {
+  top: 132px;
+  left: 24px;
+}
+
+.tower.radiant.t3 {
+  top: 182px;
+  left: 22px;
+}
+
+.tower.radiant.m1 {
+  top: 145px;
+  left: 105px;
+}
+
+.tower.radiant.m2 {
+  top: 165px;
+  left: 75px;
+}
+
+.tower.radiant.m3 {
+  top: 195px;
+  left: 50px;
+}
+
+.tower.radiant.b1 {
+  bottom: 32px;
+  left: 200px;
+}
+
+.tower.radiant.b2 {
+  bottom: 34px;
+  left: 125px;
+}
+
+.tower.radiant.b3 {
+  bottom: 34px;
+  left: 65px;
+}
+.tower.destroyed {
+  background: rgb(216, 16, 16);
+}
+
+.tower.radiant.at {
+  bottom: 55px;
+  left: 30px;
+}
+.tower.radiant.ab {
+  bottom: 45px;
+  left: 40px;
+}
+
+.barrack.radiant {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgb(16, 213, 16);
+}
+
+.barrack.radiant.bm {
+  bottom: 30px;
+  left: 55px;
+}
+
+.barrack.radiant.br {
+  bottom: 40px;
+  left: 55px;
+}
+
+.barrack.radiant.mm {
+  bottom: 58px;
+  left: 50px;
+}
+.barrack.radiant.mr {
+  bottom: 65px;
+  left: 42px;
+}
+
+.barrack.radiant.tm {
+  bottom: 72px;
+  left: 30px;
+}
+.barrack.radiant.tr {
+  bottom: 72px;
+  left: 20px;
+}
+
+.barrack.destroyed {
+  background: rgb(216, 16, 16);
+}
+
+/* DIRE */
+
+.tower.dire {
+  position: absolute;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  background: rgb(126, 186, 126);
+}
+
+.tower.dire.t1 {
+  top: 30px;
+  left: 45px;
+}
+
+.tower.dire.t2 {
+  top: 25px;
+  left: 110px;
+}
+
+.tower.dire.t3 {
+  top: 34px;
+  left: 180px;
+}
+
+.tower.dire.m1 {
+  top: 120px;
+  left: 133px;
+}
+
+.tower.dire.m2 {
+  top: 95px;
+  right: 95px;
+}
+
+.tower.dire.m3 {
+  top: 70px;
+  right: 63px;
+}
+
+.tower.dire.b1 {
+  top: 160px;
+  right: 25px;
+}
+
+.tower.dire.b2 {
+  top: 130px;
+  right: 25px;
+}
+
+.tower.dire.b3 {
+  top: 83px;
+  right: 23px;
+}
+.tower.destroyed {
+  background: rgb(216, 16, 16);
+}
+
+.tower.dire.at {
+  top: 45px;
+  right: 45px;
+}
+.tower.dire.ab {
+  top: 55px;
+  right: 35px;
+}
+
+.barrack.dire {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgb(126, 186, 126);
+}
+
+.barrack.dire.br {
+  top: 73px;
+  right: 30px;
+}
+
+.barrack.dire.bm {
+  top: 73px;
+  right: 20px;
+}
+
+.barrack.dire.mr {
+  top: 60px;
+  right: 60px;
+}
+.barrack.dire.mm {
+  top: 68px;
+  right: 52px;
+}
+
+.barrack.dire.tr {
+  top: 30px;
+  right: 68px;
+}
+.barrack.dire.tm {
+  top: 40px;
+  right: 68px;
+}
+
+.barrack.destroyed {
+  background: rgb(216, 16, 16);
+}
+
+.thron.dire {
+  position: absolute;
+  background: rgb(126, 186, 126);
+
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  top: 28px;
+  right: 21px;
+}
+.thron.radiant {
+  position: absolute;
+
+  background: rgb(16, 213, 16);
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  bottom: 30px;
+  left: 15px;
+}
+
+.thron.destroyed {
+  background: rgb(216, 16, 16);
+}

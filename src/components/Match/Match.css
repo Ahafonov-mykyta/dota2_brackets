@@ -1,0 +1,58 @@
+.match {
+  background: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 20px;
+  /* border: 2px black solid; */
+}
+
+.team {
+  width: 100%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration: none;
+  border: 1px solid gray;
+  font-weight: 500;
+}
+
+.team.hover {
+  background: rgb(42, 185, 57);
+}
+
+.team_logo {
+  width: 20px;
+  margin-left: 25px;
+  margin-right: 5px;
+}
+
+.team__score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.5;
+  border-left: 1px solid gray;
+  width: 20px;
+  height: 100%;
+  margin-left: auto;
+}
+
+.team.winner {
+  font-weight: 600;
+}
+
+.team.winner > .team__score {
+  background: rgb(120, 219, 27);
+}
+
+.line {
+  position: absolute;
+  z-index: 5;
+}
