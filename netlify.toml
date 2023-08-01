@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build" # Укажите команду для сборки вашего приложения
+  publish = "build" # Укажите папку, в которой находятся собранные файлы
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://api.steampowered.com/:splat"
+  status = 200
+  force = true

@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_KEY = "8B7CCB94980C8EFBEEB368257D26F99F";
+const API_KEY = "BB630920AA0332B344251E1A3C1EB035";
 
 async function getDotaHeroes() {
   try {
