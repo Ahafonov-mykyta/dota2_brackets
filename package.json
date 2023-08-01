@@ -20,6 +20,8 @@
   },
   "proxy": "https://api.steampowered.com",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "server": "node server.js",
     "start": " react-scripts start",
     "build": "react-scripts build",
@@ -45,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "http-proxy-middleware": "^2.0.6",
     "webpack-dev-server": "^4.15.1"
   }
