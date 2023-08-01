@@ -3,7 +3,7 @@ import axios from "axios";
 async function getMatchDetails(matchId) {
   try {
     const response = await axios.get(
-      `http://localhost:7777/api/details/${matchId}`
+      `https://aqueous-headland-75357-75ce39fd598f.herokuapp.com//api/details/${matchId}`
     );
     const data = response.data;
 
