@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e3983b4.css",
+    "main.js": "/static/js/main.957cf984.js",
+    "static/media/minimap.webp": "/static/media/minimap.18a4a6a1a19874c5fb15.webp",
+    "static/media/bg3.jpeg": "/static/media/bg3.5f4a9dbf87b1a9bafb43.jpeg",
+    "static/media/sad.png": "/static/media/sad.48e9b7e3b8f577e58de7.png",
+    "static/media/dota.png": "/static/media/dota.a667ad4501eb1cd62a10.png",
+    "index.html": "/index.html",
+    "main.7e3983b4.css.map": "/static/css/main.7e3983b4.css.map",
+    "main.957cf984.js.map": "/static/js/main.957cf984.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e3983b4.css",
+    "static/js/main.957cf984.js"
+  ]
+}
