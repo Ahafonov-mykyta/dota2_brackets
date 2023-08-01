@@ -9,6 +9,7 @@
 }
 
 .tower.radiant {
+  border: solid black 1px;
   position: absolute;
   border-radius: 100%;
   width: 12px;
@@ -74,6 +75,7 @@
 }
 
 .barrack.radiant {
+  border: solid black 1px;
   position: absolute;
   width: 8px;
   height: 8px;
@@ -115,6 +117,7 @@
 /* DIRE */
 
 .tower.dire {
+  border: solid black 1px;
   position: absolute;
   border-radius: 100%;
   width: 12px;
@@ -180,6 +183,7 @@
 }
 
 .barrack.dire {
+  border: solid black 1px;
   position: absolute;
   width: 8px;
   height: 8px;
@@ -219,6 +223,7 @@
 }
 
 .thron.dire {
+  border: solid black 1px;
   position: absolute;
   background: rgb(126, 186, 126);
 
@@ -229,6 +234,7 @@
   right: 21px;
 }
 .thron.radiant {
+  border: solid black 1px;
   position: absolute;
 
   background: rgb(16, 213, 16);
