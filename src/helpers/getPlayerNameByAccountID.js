@@ -5,7 +5,7 @@ async function getPlayerNameByAccountID(accountID) {
     const response = await axios.get(
       `https://aqueous-headland-75357-75ce39fd598f.herokuapp.com/api/nicknames/${accountID}`
     );
-    console.log(response);
+
     return response;
   } catch (error) {
     console.error("Error:", error);
