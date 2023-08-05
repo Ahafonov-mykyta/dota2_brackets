@@ -12,7 +12,7 @@ import { useQuery } from "react-query";
 function MatchInfo({ matchData }) {
   const [heroes, setHeroes] = useState([]);
   const { data, isLoading } = useQuery(
-    "nicknames",
+    ["nicknames", matchData],
     () => getPlayersNicknames(players),
     { enabled: true, refetchOnWindowFocus: false }
   );
