@@ -1,9 +1,22 @@
 import "./Tournament.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Bracket from "../Bracket/Bracket";
+import Scheme from "../Scheme/Scheme";
 
 function Tournament({ brackets }) {
   const [hoveredTeamID, setHoveredTeamID] = useState(0);
+  let matchesCoordinates = {
+    upper: [],
+    lower: [],
+  };
+
+  useEffect(() => {
+    matchesCoordinates = {
+      upper: [],
+      lower: [],
+    };
+  });
+
   const bracketsKeys = Object.keys(brackets);
 
   const teamIsHovered = (e) => {
@@ -12,6 +25,42 @@ function Tournament({ brackets }) {
 
   const teamIsUnhovered = (e) => {
     setHoveredTeamID(0);
+  };
+
+  const getComponentCoordinates = (element) => {
+    const childrenArray = Array.from(element.children);
+    // const winnerId = childrenArray.map((el) => {
+    //   const arr = Array.from(el.children);
+    //   return arr.find((e) => {
+    //     return e.classList.contains("winner");
+    //   });
+    // });
+    // console.log(winnerId);
+    // for (const el of children) {
+    //   return el.classList.contains("winner") ? (winnerId = "1") : null;
+    // }
+
+    const coordinatesOfChildren = [];
+    childrenArray.map((child) => {
+      const { top, left, width, height } = child.getBoundingClientRect();
+      const winner = Array.from(child.children).find((el) =>
+        el.classList.contains("winner")
+      );
+      const winnerId = winner ? Number(winner.dataset.teamId) : null;
+      coordinatesOfChildren.push({
+        y: top,
+        x: left,
+        w: width,
+        h: height,
+        id: winnerId,
+      });
+    });
+    coordinatesOfChildren.shift(); // уудаляем заголовок
+    if (element.parentElement.classList.contains("upper")) {
+      matchesCoordinates.upper.push(coordinatesOfChildren);
+    } else {
+      matchesCoordinates.lower.push(coordinatesOfChildren);
+    }
   };
 
   return (
@@ -24,8 +73,13 @@ function Tournament({ brackets }) {
           teamHover={teamIsHovered}
           hoveredTeamID={hoveredTeamID}
           teamUnhover={teamIsUnhovered}
+          getComponentCoordinates={getComponentCoordinates}
         />
       ))}
+      <Scheme
+        matchesCoordinates={matchesCoordinates}
+        hoveredTeamID={hoveredTeamID}
+      />
     </div>
   );
 }

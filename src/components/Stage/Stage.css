@@ -12,4 +12,11 @@
 }
 .stage {
   height: 100%;
+  margin-bottom: -20px;
+}
+
+.double--special {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
 }

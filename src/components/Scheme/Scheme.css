@@ -1,0 +1,42 @@
+.connector {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 2px;
+}
+
+.connector.hover {
+  z-index: 5;
+  background-color: rgb(43, 183, 18);
+}
+
+.corner {
+  display: inline-block;
+  position: absolute;
+  width: 15px;
+  border: 2px solid rgb(255, 255, 255);
+
+  border-radius: 1px;
+}
+
+.corner.down {
+  border-left: none;
+  border-bottom: none;
+}
+
+.corner.up {
+  border-left: none;
+  border-top: none;
+}
+
+.corner.center {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+}
+.corner.center.hover {
+  background-color: rgb(43, 183, 18);
+}
+
+.corner.hover {
+  border-color: rgb(43, 183, 18);
+}

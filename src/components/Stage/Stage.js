@@ -1,8 +1,16 @@
 import { nanoid } from "nanoid";
+import { useEffect, useRef } from "react";
 import Match from "../Match/Match";
 import "./Stage.css";
 
-function Stage({ stageData, teamHover, hoveredTeamID, teamUnhover }) {
+function Stage({
+  stageData,
+  teamHover,
+  hoveredTeamID,
+  teamUnhover,
+  specialStyle,
+  getComponentCoordinates,
+}) {
   const processStageTitle = (inputString) => {
     return inputString
       .replace(/_+/g, " ")
@@ -12,13 +20,16 @@ function Stage({ stageData, teamHover, hoveredTeamID, teamUnhover }) {
       .replace(/r2/g, "round 2");
   };
 
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    getComponentCoordinates(componentRef.current);
+  }, [stageData]);
+
   return (
-    <div className="stage">
+    <div className={`stage ${specialStyle} `} ref={componentRef}>
       <div className="stage_title">{processStageTitle(stageData.title)}</div>
       {stageData.matches.map((match) => {
-        // console.log(checkIfTeamIsHovered(match.teams) + " функция ховера ");
-        // console.log(hoveredTeamID, "hoveredTeamID");
-        // console.log(match.teams[0].id, "Айди команды ");
         return (
           <Match
             matchData={match}

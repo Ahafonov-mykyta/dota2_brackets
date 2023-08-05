@@ -36,23 +36,28 @@ function InteractiveMap({ matchData }) {
     return binaryArray;
   }
 
+  const {
+    tower_status_radiant,
+    barracks_status_radiant,
+    tower_status_dire,
+    barracks_status_dire,
+    radiant_win,
+  } = matchData.result;
+
   const towersRadiant = decimalToBinaryArray(
-    matchData.result.tower_status_radiant,
+    tower_status_radiant,
     towers.length
   );
 
   const barracksRadiant = decimalToBinaryArray(
-    matchData.result.barracks_status_radiant,
+    barracks_status_radiant,
     barracks.length
   );
 
-  const towersDire = decimalToBinaryArray(
-    matchData.result.tower_status_dire,
-    towers.length
-  );
+  const towersDire = decimalToBinaryArray(tower_status_dire, towers.length);
 
   const barracksDire = decimalToBinaryArray(
-    matchData.result.barracks_status_dire,
+    barracks_status_dire,
     barracks.length
   );
 
@@ -99,14 +104,8 @@ function InteractiveMap({ matchData }) {
             key={nanoid()}></div>
         );
       })}
-      <div
-        className={`thron radiant ${
-          !matchData.result.radiant_win ? "destroyed" : ""
-        }`}></div>
-      <div
-        className={`thron dire ${
-          matchData.result.radiant_win ? "destroyed" : ""
-        }`}></div>
+      <div className={`thron radiant ${!radiant_win ? "destroyed" : ""}`}></div>
+      <div className={`thron dire ${radiant_win ? "destroyed" : ""}`}></div>
     </div>
   );
 }

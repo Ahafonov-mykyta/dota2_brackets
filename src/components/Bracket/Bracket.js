@@ -3,7 +3,14 @@ import classnames from "classnames";
 import "./Bracket.css";
 import Stage from "../Stage/Stage";
 
-function Bracket({ type, bracketInfo, teamHover, hoveredTeamID, teamUnhover }) {
+function Bracket({
+  type,
+  bracketInfo,
+  teamHover,
+  hoveredTeamID,
+  teamUnhover,
+  getComponentCoordinates,
+}) {
   const isUpperBracket = type === "upper" ? true : false;
   const numberOfUpperQuarterFinalMatches = bracketInfo[type][0].matches.length;
   const numberOfLowerStages = bracketInfo[type].length;
@@ -16,6 +23,16 @@ function Bracket({ type, bracketInfo, teamHover, hoveredTeamID, teamUnhover }) {
     long: !isUpperBracket && numberOfLowerStages !== 4,
   });
 
+  const checkStageStyle = (stage) => {
+    if (
+      bracketInfo[type][0].matches.length === 4 &&
+      stage.matches.length === 2
+    ) {
+      return "double--special";
+    }
+    return "";
+  };
+
   return (
     <div className={bracketClassName}>
       {bracketInfo[type].map((stage) => {
@@ -26,6 +43,8 @@ function Bracket({ type, bracketInfo, teamHover, hoveredTeamID, teamUnhover }) {
             teamHover={teamHover}
             hoveredTeamID={hoveredTeamID}
             teamUnhover={teamUnhover}
+            specialStyle={checkStageStyle(stage)}
+            getComponentCoordinates={getComponentCoordinates}
           />
         );
       })}
