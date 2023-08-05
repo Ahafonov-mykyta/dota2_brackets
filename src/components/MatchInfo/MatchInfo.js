@@ -72,6 +72,15 @@ function MatchInfo({ matchData }) {
                 </div>
               ))}
             </div>
+            <div className="matchinfo_moreID">
+              You can find more actual match IDs{" "}
+              <a
+                href="https://uk.dotabuff.com/esports/matches"
+                target="_blank"
+                rel="noreferrer">
+                here
+              </a>
+            </div>
           </div>
           <InteractiveMap matchData={matchData} />
         </>
