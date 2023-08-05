@@ -268,3 +268,9 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -31,38 +31,26 @@
   border-radius: 10px;
   background: rgb(174, 3, 3);
   color: white;
-  padding: 0 10px;
+  padding: 5px 12px;
   border: 0;
   transition: 150ms linear;
   border: 2px solid rgb(255, 255, 255);
 }
+
+.findmatch__button:disabled {
+  background-color: gray;
+}
+
 .findmatch__button:hover {
   background: white;
   color: rgb(174, 3, 3);
   border: 2px solid rgb(0, 0, 0);
 }
-
-.matchinfo_title {
-  margin: 0;
-  font-size: 25px;
+.findmatch__button:hover:disabled {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
 }
-
-.matchinfo {
-  padding: 15px;
-}
-
-.matchinfo_nicknames {
-  margin-left: 5px;
-}
-
-.matchinfo_nicknames::after {
-  content: ",";
-}
-
-.matchinfo_nicknames:last-child::after {
-  content: ".";
-}
-
 .findmatch__loader {
   position: absolute;
   top: 50%;
@@ -71,6 +59,7 @@
 }
 
 .error_nodata {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,10 +68,7 @@
 
 .error_nodata_image {
   width: 150px;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+
   display: block;
   margin-left: auto;
   margin-right: auto;

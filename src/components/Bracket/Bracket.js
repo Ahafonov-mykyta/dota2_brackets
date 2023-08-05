@@ -24,13 +24,10 @@ function Bracket({
   });
 
   const checkStageStyle = (stage) => {
-    if (
-      bracketInfo[type][0].matches.length === 4 &&
+    return bracketInfo[type][0].matches.length === 4 &&
       stage.matches.length === 2
-    ) {
-      return "double--special";
-    }
-    return "";
+      ? "double--special"
+      : "";
   };
 
   return (

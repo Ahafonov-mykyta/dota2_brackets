@@ -4,14 +4,12 @@ import { useState, useEffect } from "react";
 
 function Team({ teamHover, teamInfo, winner, hoveredTeamID, teamUnhover }) {
   const [isHovered, setIsHovered] = useState(false);
+  const { id, image, name, score } = teamInfo;
 
   useEffect(() => {
-    if (teamInfo.id === hoveredTeamID) {
-      setIsHovered(true);
-    } else {
-      setIsHovered(false);
-    }
-  }, [teamInfo.id, hoveredTeamID]);
+    id === hoveredTeamID ? setIsHovered(true) : setIsHovered(false);
+  }, [id, hoveredTeamID]);
+
   const teamClasses = classnames("team", {
     winner: winner,
     hover: isHovered,
@@ -23,11 +21,11 @@ function Team({ teamHover, teamInfo, winner, hoveredTeamID, teamUnhover }) {
       key={nanoid()}
       onMouseEnter={(e) => teamHover(e)}
       onMouseLeave={() => teamUnhover()}
-      data-team-id={teamInfo.id}
+      data-team-id={id}
       className={teamClasses}>
-      <img className="team_logo" src={teamInfo.image} alt="team logo" />
-      <div className="team__name">{teamInfo.name}</div>
-      <div className="team__score">{teamInfo.score}</div>
+      <img className="team_logo" src={image} alt="team logo" />
+      <div className="team__name">{name}</div>
+      <div className="team__score">{score}</div>
     </a>
   );
 }

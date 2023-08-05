@@ -33,7 +33,6 @@ function Scheme({ matchesCoordinates, hoveredTeamID }) {
                 } else {
                   nextMatchIndex = y;
                 }
-                console.log(nextMatchIndex);
                 return (
                   <Line
                     key={nanoid()}
@@ -46,9 +45,7 @@ function Scheme({ matchesCoordinates, hoveredTeamID }) {
             });
           })}
         </>
-      ) : (
-        <div></div>
-      )}
+      ) : null}
     </>
   );
 }

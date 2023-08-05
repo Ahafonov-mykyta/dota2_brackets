@@ -1,16 +1,18 @@
 import axios from "axios";
+import accountIDToSteamID from "./accountIDToSteamID";
 
-async function getPlayerNameByAccountID(accountID) {
-  try {
-    const response = await axios.get(
-      `https://aqueous-headland-75357-75ce39fd598f.herokuapp.com/api/nicknames/${accountID}`
-    );
+export async function getPlayerNameByAccountID(accountID) {
+  const response = await axios.get(
+    `https://aqueous-headland-75357-75ce39fd598f.herokuapp.com/api/nicknames/${accountID}`
+  );
 
-    return response;
-  } catch (error) {
-    console.error("Error:", error);
-    return null;
-  }
+  return response;
 }
 
-export default getPlayerNameByAccountID;
+export const getPlayersNicknames = async (players) => {
+  const playersSteamIds = players.map((player) =>
+    accountIDToSteamID(player.account_id)
+  );
+  const names = await getPlayerNameByAccountID(playersSteamIds);
+  return names.data.map((player) => player.personaname);
+};

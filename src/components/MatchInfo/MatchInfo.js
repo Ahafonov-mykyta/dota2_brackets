@@ -3,16 +3,19 @@ import { nanoid } from "nanoid";
 import "./MatchInfo.css";
 import InteractiveMap from "../InteractiveMap/InteractiveMap";
 import CircularProgress from "@mui/material/CircularProgress";
-import getPlayerNameByAccountID from "../../helpers/getPlayerNameByAccountID";
-import getDotaHeroes from "../../helpers/getHeroName";
-import timeFormat from "../../helpers/timeFormat";
+import { getPlayersNicknames } from "../../helpers/getPlayerNameByAccountID";
+import transformTimeFormat from "../../helpers/timeFormat";
 import convertToHeroName from "../../helpers/convertToHeroName";
-import accountIDToSteamID from "../../helpers/accountIDToSteamID";
+import heroesDota from "../../heroes.json";
+import { useQuery } from "react-query";
 
 function MatchInfo({ matchData }) {
-  const [nicknames, setNicknames] = useState([]);
   const [heroes, setHeroes] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { data, isLoading } = useQuery(
+    "nicknames",
+    () => getPlayersNicknames(players),
+    { enabled: true, refetchOnWindowFocus: false }
+  );
 
   const {
     result: {
@@ -27,29 +30,17 @@ function MatchInfo({ matchData }) {
   } = matchData;
 
   useEffect(() => {
-    const playersSteamIds = players.map((player) =>
-      accountIDToSteamID(player.account_id)
-    );
-
-    Promise.all([
-      getPlayerNameByAccountID(playersSteamIds),
-      getDotaHeroes(),
-    ]).then(([nicknamesData, heroesData]) => {
-      setNicknames(nicknamesData.data.map((player) => player.personaname));
-
-      const heroesIds = players.map((player) => player.hero_id);
-      const heroNames = heroesIds.map((heroId) => {
-        const hero = heroesData.find((h) => h.id === heroId);
-        return convertToHeroName(hero.name);
-      });
-      setHeroes(heroNames);
-      setLoading(false);
+    const heroesIds = players.map((player) => player.hero_id);
+    const heroNames = heroesIds.map((heroId) => {
+      const hero = heroesDota.result.heroes.find((h) => h.id === heroId);
+      return convertToHeroName(hero.name);
     });
+    setHeroes(heroNames);
   }, [matchData]);
 
   return (
     <div className="matchinfo">
-      {loading ? (
+      {isLoading ? (
         <CircularProgress color="error" className="findmatch__loader" />
       ) : (
         <>
@@ -59,24 +50,26 @@ function MatchInfo({ matchData }) {
               {radiant_name ? radiant_name : `RADIANT`}
             </h1>
             <div>ID: {match_id}</div>
-            <div>Время: {timeFormat(duration)}</div>
+            <div>Время: {transformTimeFormat(duration)}</div>
             <div>
               Счет: {dire_score}:{radiant_score}
             </div>
             <div>
-              Игроки сил света:
-              {nicknames.slice(0, 5).map((nickname, index) => (
-                <span className="matchinfo_nicknames" key={nanoid()}>
+              <div className="matchinfo_players">Игроки сил света:</div>
+
+              {data.slice(0, 5).map((nickname, index) => (
+                <div className="matchinfo_nicknames" key={nanoid()}>
                   {nickname} ({heroes[index]})
-                </span>
+                </div>
               ))}
             </div>
             <div>
-              Игроки сил тьмы:
-              {nicknames.slice(5).map((nickname, index) => (
-                <span className="matchinfo_nicknames" key={nanoid()}>
+              <div className="matchinfo_players"> Игроки сил тьмы:</div>
+
+              {data.slice(5).map((nickname, index) => (
+                <div className="matchinfo_nicknames" key={nanoid()}>
                   {nickname} ({heroes[index + 5]})
-                </span>
+                </div>
               ))}
             </div>
           </div>

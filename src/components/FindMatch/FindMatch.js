@@ -1,42 +1,31 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
 import "./FindMatch.css";
 import MatchInfo from "../MatchInfo/MatchInfo";
 import getMatchDetails from "../../helpers/getMatchDetails";
 import sad from "../../images/sad.png";
 import CircularProgress from "@mui/material/CircularProgress";
+import { useQuery } from "react-query";
 
 const MemoizedMatchInfo = React.memo(MatchInfo);
 
 function FindMatch() {
-  const [matchId, setMatchId] = useState("");
-  const [matchData, setMatchData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [matchId, setMatchId] = useState("7234263112");
+  const { data, isLoading, isError, refetch } = useQuery(
+    "matchData",
+    () => getMatchDetails(matchId),
 
-  useEffect(() => {
-    getMatchDetails("7234263112")
-      .then((data) => {
-        setMatchData(data);
-        setLoading(false);
-      })
-      .catch(() => setMatchData(null));
-  }, []);
+    { enabled: true, refetchOnWindowFocus: false }
+  );
 
   const onChange = (e) => {
     setMatchId(e.target.value);
   };
 
-  const onSubmit = async (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
-    getMatchDetails(matchId)
-      .then((data) => {
-        if (data.result.error) {
-          return setMatchData(null);
-        }
-        setMatchData(data);
-        setMatchId("");
-      })
-      .catch(() => setMatchData(null));
+    refetch();
+    setMatchId("");
   };
 
   return (
@@ -49,20 +38,32 @@ function FindMatch() {
           onChange={onChange}
           placeholder="Enter ID match here...."
         />
-        <button className="findmatch__button" type="submit">
+        <button
+          className="findmatch__button"
+          type="submit"
+          disabled={matchId ? false : true}>
           Get match data
         </button>
       </form>
 
-      {loading ? (
+      {isLoading ? (
         <CircularProgress color="error" className="findmatch__loader" />
-      ) : !matchData ? (
+      ) : !data || data.result.error || isError ? (
         <div className="error_nodata">
           <img src={sad} alt="sad" className="error_nodata_image" />
-          <div className="error_text">There is no match with that ID </div>
+          <div className="error_text">
+            There is no match with that ID <br />
+            You can find some actual IDs{" "}
+            <a
+              href="https://uk.dotabuff.com/esports/matches"
+              target="_blank"
+              rel="noreferrer">
+              here
+            </a>
+          </div>
         </div>
       ) : (
-        <MemoizedMatchInfo matchData={matchData} />
+        <MemoizedMatchInfo matchData={data} />
       )}
     </div>
   );

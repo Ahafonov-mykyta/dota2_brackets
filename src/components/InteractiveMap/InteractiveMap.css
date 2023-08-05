@@ -4,6 +4,7 @@
 }
 
 .minimap {
+  height: 100%;
   position: relative;
   width: 35%;
 }
@@ -222,7 +223,7 @@
   background: rgb(216, 16, 16);
 }
 
-.thron.dire {
+.throne.dire {
   border: solid black 1px;
   position: absolute;
   background: rgb(126, 186, 126);
@@ -233,7 +234,7 @@
   top: 28px;
   right: 21px;
 }
-.thron.radiant {
+.throne.radiant {
   border: solid black 1px;
   position: absolute;
 
@@ -245,6 +246,6 @@
   left: 15px;
 }
 
-.thron.destroyed {
+.throne.destroyed {
   background: rgb(216, 16, 16);
 }

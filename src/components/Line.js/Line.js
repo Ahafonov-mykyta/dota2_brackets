@@ -13,25 +13,20 @@ const Line = ({ match, nextMatch, hoveredTeamID }) => {
   });
 
   const calculateLinePosition = (match, nextMatch) => {
+    let coordinates = {
+      left: match.x + match.w,
+    };
     if (match.y < nextMatch.y) {
-      return {
-        height: Math.abs(nextMatch.y - match.y),
-        top: match.y + match.h / 2 - 1,
-        left: match.x + match.w,
-      };
+      coordinates.height = Math.abs(nextMatch.y - match.y);
+      coordinates.top = match.y + match.h / 2 - 1;
     } else if (match.y > nextMatch.y) {
-      return {
-        height: Math.abs(nextMatch.y - match.y),
-        top: match.y + match.h / 2 + nextMatch.y - match.y + 1,
-        left: match.x + match.w,
-      };
+      coordinates.height = Math.abs(nextMatch.y - match.y);
+      coordinates.top = match.y + match.h / 2 + nextMatch.y - match.y + 1;
     } else {
-      return {
-        height: 2 + "px",
-        top: match.y + match.h / 2 + nextMatch.y - match.y - 1,
-        left: match.x + match.w,
-      };
+      coordinates.height = 2 + "px";
+      coordinates.top = match.y + match.h / 2 + nextMatch.y - match.y - 1;
     }
+    return coordinates;
   };
 
   return (

@@ -5,6 +5,7 @@ import Scheme from "../Scheme/Scheme";
 
 function Tournament({ brackets }) {
   const [hoveredTeamID, setHoveredTeamID] = useState(0);
+  const bracketsKeys = Object.keys(brackets);
   let matchesCoordinates = {
     upper: [],
     lower: [],
@@ -17,8 +18,6 @@ function Tournament({ brackets }) {
     };
   });
 
-  const bracketsKeys = Object.keys(brackets);
-
   const teamIsHovered = (e) => {
     setHoveredTeamID(Number(e.currentTarget.dataset.teamId));
   };
@@ -29,17 +28,6 @@ function Tournament({ brackets }) {
 
   const getComponentCoordinates = (element) => {
     const childrenArray = Array.from(element.children);
-    // const winnerId = childrenArray.map((el) => {
-    //   const arr = Array.from(el.children);
-    //   return arr.find((e) => {
-    //     return e.classList.contains("winner");
-    //   });
-    // });
-    // console.log(winnerId);
-    // for (const el of children) {
-    //   return el.classList.contains("winner") ? (winnerId = "1") : null;
-    // }
-
     const coordinatesOfChildren = [];
     childrenArray.map((child) => {
       const { top, left, width, height } = child.getBoundingClientRect();
@@ -56,11 +44,9 @@ function Tournament({ brackets }) {
       });
     });
     coordinatesOfChildren.shift(); // уудаляем заголовок
-    if (element.parentElement.classList.contains("upper")) {
-      matchesCoordinates.upper.push(coordinatesOfChildren);
-    } else {
-      matchesCoordinates.lower.push(coordinatesOfChildren);
-    }
+    element.parentElement.classList.contains("upper")
+      ? matchesCoordinates.upper.push(coordinatesOfChildren)
+      : matchesCoordinates.lower.push(coordinatesOfChildren);
   };
 
   return (

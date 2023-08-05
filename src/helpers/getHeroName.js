@@ -5,10 +5,9 @@ async function getDotaHeroes() {
     const response = await axios.get(
       `https://aqueous-headland-75357-75ce39fd598f.herokuapp.com/api/heroes`
     );
-    const heroesData = response.data.result.heroes;
-    return heroesData;
+    return response.data.result.heroes;
   } catch (error) {
-    console.error("Ошибка:", error);
+    console.error("ERROR:", error);
     return null;
   }
 }
