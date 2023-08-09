@@ -36,7 +36,7 @@ function Tournament({ brackets }) {
       );
       const winnerId = winner ? Number(winner.dataset.teamId) : null;
       coordinatesOfChildren.push({
-        y: top,
+        y: top + window.scrollY,
         x: left,
         w: width,
         h: height,
